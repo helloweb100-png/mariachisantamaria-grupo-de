@@ -1746,19 +1746,21 @@ main section[id] {
 }
 
 /* =========================================================
-   GALLERY - 6 IMAGES
+   GALLERY - 2 VIDEOS
    ========================================================= */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(10px, 1.2vw, 16px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 24px);
+  max-width: 620px;
+  margin-inline: auto;
   counter-reset: gitem;
 }
 
 .gallery-item {
   position: relative;
   margin: 0;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 9 / 16;
   overflow: hidden;
   border: 1px solid var(--photo-line-2);
   background: var(--photo-panel);
@@ -1766,7 +1768,8 @@ main section[id] {
   counter-increment: gitem;
 }
 
-.gallery-item > img {
+.gallery-item > img,
+.gallery-item > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1842,7 +1845,8 @@ main section[id] {
   background: color-mix(in srgb, var(--red) 30%, transparent);
 }
 
-.js [data-reveal="media"].gallery-item.is-visible:hover > img {
+.js [data-reveal="media"].gallery-item.is-visible:hover > img,
+.js [data-reveal="media"].gallery-item.is-visible:hover > video {
   transform: scale(1.06);
   filter: contrast(1.04) brightness(1.06);
 }
@@ -2780,14 +2784,11 @@ main section[id] {
     grid-template-columns: 1fr;
   }
 
-  /* Galeria: 2 columnas x 3 filas */
+  /* Galeria: 1 video por fila en movil */
   .gallery-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .gallery-item {
-    aspect-ratio: 1 / 1;
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    gap: 16px;
   }
 
   .contact-list li {
@@ -3435,43 +3436,19 @@ main section[id] {
             <p class="eyebrow" data-reveal>Momentos que no se olvidan</p>
             <h2 class="section-title" data-reveal>El mariachi que <span class="text-gold">pone el ambiente</span></h2>
           </div>
-          <p class="section-desc" data-reveal>Cada celebracion merece musica en vivo que se sienta de verdad. Aqui puedes ver al Mariachi Santa Maria CDMX en accion, llevando alegria y tradicion a cada evento.</p>
+          <p class="section-desc" data-reveal>Cada celebracion merece musica en vivo que se sienta de verdad. Mira y escucha al Mariachi Santa Maria CDMX en accion, en video real de nuestras presentaciones.</p>
         </div>
         <div class="gallery-grid" data-reveal-group>
           <figure class="gallery-item" data-reveal="media">
-            <img src="https://images.pexels.com/photos/8919727/pexels-photo-8919727.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Mariachi completo tocando en salon de bodas" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="0" aria-label="Ampliar imagen: Mariachi completo tocando en salon de bodas">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
+            <video class="gallery-video" src="video-mariachi-1.mp4" data-caption="Mariachi Santa Maria CDMX en vivo" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="0" aria-label="Reproducir video: Mariachi Santa Maria CDMX en vivo">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
             </button>
           </figure>
           <figure class="gallery-item" data-reveal="media">
-            <img src="https://images.pexels.com/photos/8639395/pexels-photo-8639395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cantante de mariachi frente a familia reunida" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="1" aria-label="Ampliar imagen: Cantante de mariachi frente a familia reunida">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
-            </button>
-          </figure>
-          <figure class="gallery-item" data-reveal="media">
-            <img src="https://images.pexels.com/photos/5738259/pexels-photo-5738259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Trompetistas del grupo durante una serenata nocturna" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="2" aria-label="Ampliar imagen: Trompetistas del grupo durante una serenata nocturna">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
-            </button>
-          </figure>
-          <figure class="gallery-item" data-reveal="media">
-            <img src="https://images.pexels.com/photos/18047525/pexels-photo-18047525.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Mariachi Santa Maria en jardin con trajes de gala" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="3" aria-label="Ampliar imagen: Mariachi Santa Maria en jardin con trajes de gala">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
-            </button>
-          </figure>
-          <figure class="gallery-item" data-reveal="media">
-            <img src="https://images.pexels.com/photos/36186231/pexels-photo-36186231.png?auto=compress&cs=tinysrgb&h=650&w=940" alt="Violinistas tocando frente a invitados en fiesta" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="4" aria-label="Ampliar imagen: Violinistas tocando frente a invitados en fiesta">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
-            </button>
-          </figure>
-          <figure class="gallery-item" data-reveal="media">
-            <img src="https://images.pexels.com/photos/8639446/pexels-photo-8639446.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Grupo de mariachi en escenario con decoracion patria" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="5" aria-label="Ampliar imagen: Grupo de mariachi en escenario con decoracion patria">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
+            <video class="gallery-video" src="video-mariachi-2.mp4" data-caption="Mariachi Santa Maria CDMX en presentacion" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="1" aria-label="Reproducir video: Mariachi Santa Maria CDMX en presentacion">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
             </button>
           </figure>
         </div>
@@ -3608,19 +3585,19 @@ main section[id] {
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12 19 6.4 17.6 5 12 10.6Z"/></svg>
       </button>
       <div class="lightbox-stage">
-        <button type="button" class="lightbox-nav lightbox-nav--prev" data-lightbox-prev aria-label="Imagen anterior">
+        <button type="button" class="lightbox-nav lightbox-nav--prev" data-lightbox-prev aria-label="Video anterior">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.7 5.3 8 12l6.7 6.7 1.4-1.4L10.8 12l5.3-5.3Z"/></svg>
         </button>
         <div class="lightbox-frame">
-          <img src="" alt="" class="lightbox-image" id="lightbox-image">
+          <video src="" class="lightbox-image" id="lightbox-video" controls playsinline></video>
         </div>
-        <button type="button" class="lightbox-nav lightbox-nav--next" data-lightbox-next aria-label="Imagen siguiente">
+        <button type="button" class="lightbox-nav lightbox-nav--next" data-lightbox-next aria-label="Video siguiente">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.3 5.3-1.4 1.4L13.2 12l-5.3 5.3 1.4 1.4L16 12Z"/></svg>
         </button>
       </div>
       <div class="lightbox-meta">
         <span class="lightbox-caption" id="lightbox-caption"></span>
-        <span class="lightbox-count"><span id="lightbox-current">1</span> / <span id="lightbox-total">6</span></span>
+        <span class="lightbox-count"><span id="lightbox-current">1</span> / <span id="lightbox-total">2</span></span>
       </div>
     </div>
   </div>
@@ -3800,7 +3777,7 @@ document.addEventListener("keydown", (event) => {
    LIGHTBOX DE GALERIA (carrusel a pantalla completa)
    ========================================================= */
 const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightbox-image");
+const lightboxVideo = document.getElementById("lightbox-video");
 const lightboxCaption = document.getElementById("lightbox-caption");
 const lightboxCurrent = document.getElementById("lightbox-current");
 const lightboxTotal = document.getElementById("lightbox-total");
@@ -3809,31 +3786,25 @@ const lightboxPrevBtn = document.querySelector("[data-lightbox-prev]");
 const lightboxNextBtn = document.querySelector("[data-lightbox-next]");
 const lightboxTriggers = [...document.querySelectorAll("[data-lightbox-open]")];
 
-const lightboxSlides = [...document.querySelectorAll(".gallery-item img")].map((img) => ({
-  src: img.currentSrc || img.src,
-  alt: img.alt || ""
+const lightboxSlides = [...document.querySelectorAll(".gallery-item video")].map((video) => ({
+  src: video.currentSrc || video.getAttribute("src"),
+  caption: video.dataset.caption || ""
 }));
 
 let lightboxIndex = 0;
 let lightboxLastFocused = null;
 
 const renderLightboxSlide = () => {
-  if (!lightbox || !lightboxImage || !lightboxSlides.length) return;
+  if (!lightbox || !lightboxVideo || !lightboxSlides.length) return;
   const slide = lightboxSlides[lightboxIndex];
-  lightboxImage.classList.remove("is-loaded");
+  lightboxVideo.pause();
+  lightboxVideo.classList.remove("is-loaded");
+  lightboxVideo.src = slide.src;
+  lightboxVideo.load();
+  lightboxVideo.addEventListener("loadeddata", () => lightboxVideo.classList.add("is-loaded"), { once: true });
+  lightboxVideo.play().catch(() => {});
 
-  const applySlide = () => {
-    lightboxImage.src = slide.src;
-    lightboxImage.alt = slide.alt;
-    requestAnimationFrame(() => lightboxImage.classList.add("is-loaded"));
-  };
-
-  const preload = new Image();
-  preload.onload = applySlide;
-  preload.onerror = applySlide;
-  preload.src = slide.src;
-
-  if (lightboxCaption) lightboxCaption.textContent = slide.alt;
+  if (lightboxCaption) lightboxCaption.textContent = slide.caption;
   if (lightboxCurrent) lightboxCurrent.textContent = String(lightboxIndex + 1);
   if (lightboxTotal) lightboxTotal.textContent = String(lightboxSlides.length);
 };
@@ -3854,6 +3825,7 @@ const closeLightbox = () => {
   lightbox.classList.remove("is-open");
   lightbox.setAttribute("aria-hidden", "true");
   body.classList.remove("lightbox-open");
+  lightboxVideo?.pause();
   if (lightboxLastFocused instanceof HTMLElement) lightboxLastFocused.focus();
 };
 
