@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mariachi Santa Maria CDMX te lleva musica tradicional mexicana a bodas, serenatas y fiestas en Ciudad de Mexico. Puntualidad y talento garantizados. Cotiza hoy.</title>
-  <meta name="description" content="Mariachi Santa Maria CDMX te lleva musica tradicional mexicana a bodas, serenatas y fiestas en Ciudad de Mexico. Puntualidad y talento garantizados. Cotiza hoy.">
-  <meta name="keywords" content="mariachi CDMX, mariachi Ciudad de Mexico, mariachi para bodas, mariachi para serenatas, mariachi para fiestas, grupo de mariachi Mexico, Mariachi Santa Maria, mariachi eventos CDMX, contratar mariachi CDMX">
-  <meta name="author" content="Mariachi Santa Maria">
+  <title>Maríachi Santa María CDMX De Gil Márquez | Mariachi para bodas, serenatas y fiestas</title>
+  <meta name="description" content="Maríachi Santa María CDMX De Gil Márquez te lleva musica tradicional mexicana a bodas, serenatas y fiestas en Ciudad de Mexico. Puntualidad y talento garantizados. Cotiza hoy.">
+  <meta name="keywords" content="mariachi CDMX, mariachi Ciudad de Mexico, mariachi para bodas, mariachi para serenatas, mariachi para fiestas, grupo de mariachi Mexico, Maríachi Santa María, mariachi eventos CDMX, contratar mariachi CDMX">
+  <meta name="author" content="Maríachi Santa María CDMX De Gil Márquez">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#050506">
-  <meta property="og:title" content="Mariachi Santa Maria CDMX te lleva musica tradicional mexicana a bodas, serenatas y fiestas en Ciudad de Mexico. Puntualidad y talento garantizados. Cotiza hoy.">
-  <meta property="og:description" content="Mariachi Santa Maria CDMX te lleva musica tradicional mexicana a bodas, serenatas y fiestas en Ciudad de Mexico. Puntualidad y talento garantizados. Cotiza hoy.">
+  <meta property="og:title" content="Maríachi Santa María CDMX De Gil Márquez | Mariachi para bodas, serenatas y fiestas">
+  <meta property="og:description" content="Maríachi Santa María CDMX De Gil Márquez te lleva musica tradicional mexicana a bodas, serenatas y fiestas en Ciudad de Mexico. Puntualidad y talento garantizados. Cotiza hoy.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
-  <meta property="og:image" content="logo.jpg">
-  <link rel="icon" type="image/png" href="logo.jpg">
-  <link rel="apple-touch-icon" href="logo.jpg">
+  <meta property="og:image" content="logo-mejorado.jpg">
+  <link rel="icon" type="image/jpeg" href="logo-mejorado.jpg">
+  <link rel="apple-touch-icon" href="logo-mejorado.jpg">
   <script>document.documentElement.classList.add("js","is-loading");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Lato:wght@300;400;700&family=Oswald:wght@500;600;700&display=swap">
 <style>
@@ -546,10 +546,11 @@ body.is-ready .hero-eyebrow::after {
 }
 
 .site-header.is-compact .brand-name {
-  font-size: 1.1rem;
+  font-size: 0.98rem;
 }
 
-.site-header.is-compact .brand-tagline {
+.site-header.is-compact .brand-tagline,
+.site-header.is-compact .brand-owner {
   max-height: 0;
   opacity: 0;
   transform: translateY(-6px);
@@ -637,12 +638,12 @@ body.is-ready .hero-eyebrow::after {
 
 .brand-name {
   font-family: var(--hw-display);
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 1.35vw, 1.28rem);
   font-weight: 700;
   letter-spacing: 0.01em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
   transition: font-size 0.6s var(--ease-out);
 }
 
@@ -656,6 +657,16 @@ body.is-ready .hero-eyebrow::after {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: max-height 0.55s var(--ease-out), opacity 0.35s ease, transform 0.55s var(--ease-out);
+}
+
+.brand-owner {
+  color: var(--red);
+  max-height: 18px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
   transition: max-height 0.55s var(--ease-out), opacity 0.35s ease, transform 0.55s var(--ease-out);
 }
 
@@ -857,6 +868,17 @@ body.is-ready .hero-eyebrow::after {
 .btn-outline:hover {
   border-color: var(--paper);
   background: rgba(255, 255, 255, 0.07);
+}
+
+.btn-facebook {
+  color: #ffffff;
+  border-color: rgba(24, 119, 242, 0.34);
+  background: linear-gradient(120deg, #0f4ea8, #1877f2);
+  box-shadow: 0 10px 30px rgba(24, 119, 242, 0.24);
+}
+
+.btn-facebook:hover {
+  box-shadow: 0 16px 42px rgba(24, 119, 242, 0.32);
 }
 
 .btn-lg {
@@ -1110,6 +1132,44 @@ body.is-ready .hero-title .line-inner {
   margin-top: 56px;
 }
 
+.hero-contact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 22px auto 0;
+}
+
+.hero-phone-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid rgba(37, 211, 102, 0.34);
+  border-radius: var(--r-btn);
+  background: rgba(37, 211, 102, 0.1);
+  color: var(--photo-paper);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  transition: transform 0.35s var(--ease-out), border-color 0.35s ease, background 0.35s ease;
+}
+
+.hero-phone-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(37, 211, 102, 0.68);
+  background: rgba(37, 211, 102, 0.18);
+}
+
+.hero-phone-link svg {
+  width: 16px;
+  height: 16px;
+  color: var(--whatsapp);
+}
+
 .hero-meta-item {
   display: flex;
   align-items: center;
@@ -1263,6 +1323,11 @@ main section[id] {
 
 .services {
   overflow: visible;
+  background:
+    linear-gradient(180deg, rgba(122, 98, 40, 0.08), transparent 22%),
+    radial-gradient(ellipse 54% 38% at 18% 7%, rgba(133, 83, 71, 0.12), transparent 68%),
+    radial-gradient(ellipse 58% 44% at 86% 40%, rgba(88, 100, 43, 0.1), transparent 72%),
+    var(--ink);
 }
 
 .services::before,
@@ -1329,12 +1394,67 @@ main section[id] {
   line-height: 1.75;
 }
 
+.services .section-head {
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.55fr);
+  align-items: end;
+  gap: clamp(28px, 5vw, 76px);
+  margin-bottom: clamp(52px, 7vw, 90px);
+  padding-bottom: clamp(26px, 4vw, 46px);
+  border-bottom: 1px solid color-mix(in srgb, var(--red) 18%, transparent);
+}
+
+.services-title {
+  max-width: 16ch;
+  font-size: clamp(2.7rem, 5.4vw, 5.25rem);
+  line-height: 0.94;
+  letter-spacing: 0;
+  text-wrap: balance;
+  color: var(--paper);
+}
+
+.services-title-accent {
+  color: #b73128;
+  text-shadow: 0 16px 36px rgba(183, 49, 40, 0.22);
+}
+
+.services-title-warm {
+  background: linear-gradient(90deg, #7a6228 0%, #d0aa55 44%, #9b342c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.services-title .text-gold {
+  color: #b9974f;
+}
+
+.services-desc {
+  position: relative;
+  padding: 22px 0 0 22px;
+  border-left: 2px solid var(--red);
+  color: var(--paper-muted);
+  font-size: clamp(1rem, 1.25vw, 1.08rem);
+}
+
 /* =========================================================
    SERVICES
    ========================================================= */
 /* ---------- Linea de tiempo con visual fijo ---------- */
 .service-rows {
+  position: relative;
   counter-reset: srow;
+}
+
+.service-rows::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--red) 42%, transparent), transparent);
+  opacity: 0.55;
 }
 
 .service-row {
@@ -1343,7 +1463,7 @@ main section[id] {
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   gap: clamp(30px, 5vw, 80px);
   align-items: center;
-  padding: clamp(56px, 7vw, 104px) 0;
+  padding: clamp(66px, 8vw, 118px) 0;
   counter-increment: srow;
 }
 
@@ -1359,29 +1479,39 @@ main section[id] {
 .service-row::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: clamp(18px, 3vw, 34px);
+  bottom: clamp(18px, 3vw, 34px);
   left: 50%;
   z-index: 0;
   width: 100vw;
   margin-left: -50vw;
-  background: linear-gradient(180deg, var(--wash-2));
-  opacity: 0;
+  border-top: 1px solid color-mix(in srgb, var(--red) 16%, transparent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background:
+    linear-gradient(90deg, rgba(251, 247, 240, 0.95), rgba(251, 247, 240, 0.78) 48%, rgba(251, 247, 240, 0.96)),
+    var(--service-bg-image) center / cover no-repeat,
+    linear-gradient(110deg, rgba(122, 98, 40, 0.16), transparent 42%),
+    linear-gradient(180deg, var(--wash-2));
+  opacity: 1;
 }
 
 .service-row:nth-child(even)::before {
-  opacity: 1;
+  background:
+    linear-gradient(270deg, rgba(251, 247, 240, 0.95), rgba(251, 247, 240, 0.76) 48%, rgba(251, 247, 240, 0.96)),
+    var(--service-bg-image) center / cover no-repeat,
+    linear-gradient(250deg, rgba(133, 83, 71, 0.18), transparent 46%),
+    linear-gradient(180deg, var(--wash-2));
 }
 
 .service-row::after {
   content: "0" counter(srow);
   position: absolute;
-  right: -0.04em;
-  bottom: 4%;
+  right: -0.02em;
+  bottom: 2%;
   z-index: 1;
-  color: var(--ghost);
+  color: color-mix(in srgb, var(--red) 10%, transparent);
   font-family: var(--hw-display);
-  font-size: clamp(7rem, 13vw, 12rem);
+  font-size: clamp(8rem, 16vw, 15rem);
   font-weight: 700;
   line-height: 0.8;
   pointer-events: none;
@@ -1395,20 +1525,50 @@ main section[id] {
   order: 2;
 }
 
+.service-body {
+  position: relative;
+  padding: clamp(8px, 1.4vw, 18px) 0;
+}
+
+.service-body::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: -28px;
+  width: 74px;
+  height: 74px;
+  border-top: 2px solid color-mix(in srgb, var(--red) 55%, transparent);
+  border-left: 2px solid color-mix(in srgb, var(--red) 55%, transparent);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
 .service-media {
   position: relative;
   width: 100%;
   height: clamp(360px, 52vh, 540px);
   overflow: hidden;
-  border: 1px solid var(--line-2);
-  background: var(--panel);
+  border: 1px solid color-mix(in srgb, var(--red) 28%, var(--line-2));
+  border-radius: 8px;
+  background: #12100d;
+  box-shadow: 0 26px 70px rgba(28, 27, 25, 0.16);
 }
 
 .service-media > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: contrast(1.02) brightness(1.04);
+  filter: contrast(1.06) saturate(1.08) brightness(1.02);
+}
+
+.service-media::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  z-index: 2;
+  border: 1px solid rgba(244, 239, 232, 0.28);
+  border-radius: 5px;
+  pointer-events: none;
 }
 
 .service-media::after {
@@ -1416,8 +1576,10 @@ main section[id] {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg, transparent 62%, rgba(5, 5, 6, 0.4));
-  opacity: 0.55;
+  background:
+    linear-gradient(180deg, transparent 44%, rgba(5, 5, 6, 0.56)),
+    linear-gradient(110deg, rgba(122, 98, 40, 0.14), transparent 42%);
+  opacity: 0.62;
   transition: opacity 0.6s ease;
 }
 
@@ -1429,12 +1591,12 @@ main section[id] {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .service-index {
-  color: var(--red);
-  font-size: 0.68rem;
+  color: #b73128;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.18em;
   font-variant-numeric: tabular-nums;
@@ -1452,45 +1614,64 @@ main section[id] {
 
 .service-title {
   font-family: var(--hw-display);
-  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  font-size: clamp(2.18rem, 4.2vw, 4rem);
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  max-width: 18ch;
+  line-height: 0.98;
+  letter-spacing: 0;
+  max-width: 16ch;
+  background: linear-gradient(95deg, #2b2520 0%, #8f2b25 42%, #b28d3f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-wrap: balance;
+}
+
+.service-title .rise-word-inner {
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .service-desc {
   max-width: 60ch;
-  margin: 18px 0 0;
+  margin: 22px 0 0;
   color: var(--paper-muted);
-  font-size: 0.99rem;
-  line-height: 1.75;
+  font-size: clamp(1rem, 1.25vw, 1.08rem);
+  line-height: 1.78;
 }
 
 .service-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px 34px;
-  margin-top: 34px;
+  gap: 12px;
+  margin-top: 36px;
 }
 
 .service-list li {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 9px 2px;
-  color: var(--paper-muted);
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid color-mix(in srgb, var(--red) 16%, transparent);
+  border-radius: 8px;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.12)),
+    color-mix(in srgb, var(--red) 5%, transparent);
+  color: var(--paper);
   font-size: 0.89rem;
   line-height: 1.4;
-  transition: color 0.3s ease, padding-left 0.4s var(--ease-out);
+  box-shadow: 0 10px 24px rgba(28, 27, 25, 0.05);
+  transition: color 0.3s ease, transform 0.4s var(--ease-out), border-color 0.35s ease, background 0.35s ease;
 }
 
 .service-list li::before {
   content: "";
   flex-shrink: 0;
-  width: 6px;
-  height: 6px;
-  background: var(--red);
+  width: 7px;
+  height: 7px;
+  background: linear-gradient(135deg, var(--red-dark), var(--red-2));
   box-shadow: 0 0 12px color-mix(in srgb, var(--red) 60%, transparent);
   transform: rotate(45deg);
   transition: transform 0.4s var(--ease-out), background 0.3s ease;
@@ -1498,7 +1679,11 @@ main section[id] {
 
 .service-list li:hover {
   color: var(--text);
-  padding-left: 8px;
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--red) 34%, transparent);
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.2)),
+    color-mix(in srgb, var(--red) 9%, transparent);
 }
 
 .service-list li:hover::before {
@@ -1746,13 +1931,13 @@ main section[id] {
 }
 
 /* =========================================================
-   GALLERY - 2 VIDEOS
+   GALLERY - VIDEOS
    ========================================================= */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(14px, 2vw, 24px);
-  max-width: 620px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: clamp(14px, 1.8vw, 22px);
+  max-width: 1120px;
   margin-inline: auto;
   counter-reset: gitem;
 }
@@ -1764,6 +1949,7 @@ main section[id] {
   overflow: hidden;
   border: 1px solid var(--photo-line-2);
   background: var(--photo-panel);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
   --paper: var(--photo-paper);
   counter-increment: gitem;
 }
@@ -1807,6 +1993,29 @@ main section[id] {
   transform: none;
 }
 
+.gallery-sound-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--paper);
+  background: rgba(143, 43, 37, 0.72);
+  border: 1px solid rgba(244, 239, 232, 0.34);
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(5, 5, 6, 0.22);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.gallery-sound-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
 .gallery-trigger {
   position: absolute;
   inset: 0;
@@ -1817,6 +2026,22 @@ main section[id] {
   border: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.gallery-trigger::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 34px;
+  color: var(--paper);
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.45s ease, transform 0.45s var(--ease-out);
 }
 
 .gallery-trigger-icon {
@@ -1838,6 +2063,12 @@ main section[id] {
 .gallery-trigger:focus-visible .gallery-trigger-icon {
   opacity: 1;
   transform: scale(1);
+}
+
+.gallery-item:hover .gallery-trigger::after,
+.gallery-trigger:focus-visible::after {
+  opacity: 1;
+  transform: none;
 }
 
 .gallery-trigger:hover .gallery-trigger-icon {
@@ -1950,6 +2181,15 @@ main section[id] {
   min-width: 0;
   color: var(--paper-muted);
   font-size: 0.93rem;
+}
+
+.contact-phone-list {
+  display: grid;
+  gap: 4px;
+}
+
+.contact-phone-list a {
+  width: fit-content;
 }
 
 .contact-label {
@@ -2691,12 +2931,16 @@ main section[id] {
   }
 
   .brand-name {
-    font-size: 1.18rem;
+    font-size: 0.96rem;
   }
 
   .brand-tagline {
     font-size: 0.52rem;
     letter-spacing: 0.2em;
+  }
+
+  .brand-owner {
+    font-size: 0.6rem;
   }
 
   .hero {
@@ -2719,8 +2963,21 @@ main section[id] {
   }
 
   .hero-title {
-    font-size: clamp(2.6rem, 12.5vw, 3.6rem);
+    font-size: clamp(2.3rem, 10.8vw, 3.1rem);
     max-width: none;
+  }
+
+  .hero-eyebrow {
+    max-width: 100%;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.52rem;
+    letter-spacing: 0.08em;
+  }
+
+  .hero-eyebrow::before,
+  .hero-eyebrow::after {
+    display: none;
   }
 
   .hero-typewriter {
@@ -2768,6 +3025,15 @@ main section[id] {
 
   .services-cta .btn {
     width: 100%;
+  }
+
+  .hero-contact-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-phone-link {
+    justify-content: center;
   }
 
   .why-us-cta .btn,
@@ -2915,7 +3181,7 @@ main section[id] {
   }
 
   .hero-title {
-    font-size: clamp(2.3rem, 12vw, 3rem);
+    font-size: clamp(2rem, 10vw, 2.35rem);
   }
 }
 
@@ -2941,6 +3207,28 @@ main section[id] {
     justify-items: center;
     text-align: center;
     gap: 14px;
+  }
+
+  .services .section-head {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .services-title {
+    max-width: 14ch;
+  }
+
+  .services-desc {
+    padding: 18px 0 0;
+    border-left: 0;
+    border-top: 2px solid var(--red);
+  }
+
+  .service-rows::before,
+  .service-body::before {
+    display: none;
   }
 
   .section-desc {
@@ -3023,6 +3311,10 @@ main section[id] {
   .contact-text {
     justify-items: center;
     text-align: center;
+  }
+
+  .contact-phone-list {
+    justify-items: center;
   }
 
   .map-link {
@@ -3142,13 +3434,13 @@ main section[id] {
 .hero,.site-header,.loader,.lightbox,.has-bg,.parallax-banner{color:var(--photo-text);--red:#b08d3a;--red-2:#ccba8e;--red-dark:#806422;--sage:#bd8f84;--gold:#b5c577;}
 
 /* --- tercera tipografia: etiquetas y rotulos --- */
-:where(.eyebrow,.tag,.contact-label,.hero-social-label,.hero-typewriter-label,.brand-tagline,.nav-link,.footer-col h4,.footer-bottom-tag,.loader-tagline){font-family:var(--hw-acento)}
+:where(.eyebrow,.tag,.contact-label,.hero-social-label,.hero-typewriter-label,.brand-tagline,.brand-owner,.nav-link,.footer-col h4,.footer-bottom-tag,.loader-tagline){font-family:var(--hw-acento)}
 
 /* --- suelo de seguridad (no rehace el diseno) --- */
 :where(h1,h2,h3,h4,p,span,a,li,td,small){overflow-wrap:break-word}
 :where(img,svg,video,iframe){max-width:100%}
 @media (max-width:640px){
-  :where(.hero-title){font-size:clamp(1.9rem,8.2vw,2.6rem)!important;line-height:1.12!important}
+  :where(.hero-title){font-size:clamp(1.58rem,7vw,2rem)!important;line-height:1.16!important}
   :where(.section-title,.parallax-content h2){font-size:clamp(1.5rem,6.4vw,2rem)!important;line-height:1.18!important}
 }
 </style>
@@ -3158,7 +3450,7 @@ main section[id] {
     <div class="loader-texture" aria-hidden="true"></div>
     <div class="loader-inner">
       <div class="loader-mark">
-        <img src="logo.jpg" alt="" class="loader-logo">
+        <img src="logo-mejorado.jpg" alt="" class="loader-logo">
       </div>
       <div class="loader-rings" aria-hidden="true">
         <span></span><span></span><span></span>
@@ -3170,14 +3462,15 @@ main section[id] {
     </div>
   </div>
 
-  
+
 <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="Mariachi Santa Maria">
-        <span class="brand-mark"><img src="logo.jpg" alt="Mariachi Santa Maria" class="brand-logo"></span>
+      <a href="#inicio" class="brand" aria-label="Maríachi Santa María CDMX De Gil Márquez">
+        <span class="brand-mark"><img src="logo-mejorado.jpg" alt="Maríachi Santa María CDMX De Gil Márquez" class="brand-logo"></span>
         <span class="brand-text">
-          <span class="brand-name">Mariachi Santa Maria</span>
+          <span class="brand-name">Maríachi Santa María CDMX</span>
           <span class="brand-tagline">Mariachi en CDMX con talento y puntualidad</span>
+          <span class="brand-owner">De Gil Márquez</span>
         </span>
       </a>
       <nav class="main-nav" id="main-nav">
@@ -3198,24 +3491,25 @@ main section[id] {
 
 
   <main>
-    
+
 <section class="hero" id="inicio">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-veil" aria-hidden="true"></div>
       <canvas id="particles-canvas" aria-hidden="true"></canvas>
       <div class="hero-rules" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
       <div class="container hero-inner">
-        <p class="eyebrow hero-eyebrow" data-hero="1">Mariachi Santa Maria, Ciudad de Mexico</p>
+        <p class="eyebrow hero-eyebrow" data-hero="1">Maríachi Santa María CDMX De Gil Márquez</p>
         <h1 class="hero-title">
-          <span class="line" data-hero="2"><span class="line-inner gradient-text">Tu fiesta merece</span></span>
-          <span class="line" data-hero="3"><span class="line-inner">mariachi de verdad</span></span>
+          <span class="line" data-hero="2"><span class="line-inner gradient-text">Tu fiesta</span></span>
+          <span class="line" data-hero="3"><span class="line-inner">merece mariachi</span></span>
+          <span class="line" data-hero="4"><span class="line-inner">de verdad</span></span>
         </h1>
-        <p class="hero-typewriter" data-hero="4">
+        <p class="hero-typewriter" data-hero="5">
           <span class="hero-typewriter-label">Tocamos para:</span>
           <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor" aria-hidden="true"></span>
         </p>
-        <p class="hero-desc" data-hero="5">Llevamos la musica tradicional mexicana a tu celebracion en CDMX. Bodas, serenatas, fiestas y eventos especiales con el sonido que te hace sentir en casa.</p>
-        <div class="hero-cta" data-hero="6">
+        <p class="hero-desc" data-hero="6">Llevamos la musica tradicional mexicana a tu celebracion en CDMX. Bodas, serenatas, fiestas y eventos especiales con el sonido que te hace sentir en casa.</p>
+        <div class="hero-cta" data-hero="7">
           <button type="button" class="btn btn-primary btn-lg" data-wa-trigger>
             <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
             <span>Pedir por WhatsApp</span>
@@ -3223,6 +3517,16 @@ main section[id] {
           <a href="#servicios" class="btn btn-outline btn-lg">
             <span>Ver servicios</span>
             <svg viewBox="0 0 24 24" class="btn-icon btn-icon--arrow" aria-hidden="true"><path fill="currentColor" d="M12 16.5 5 9.5 6.4 8.1l5.6 5.6 5.6-5.6L19 9.5Z"/></svg>
+          </a>
+        </div>
+        <div class="hero-contact-strip" data-hero="7" aria-label="Telefonos de WhatsApp">
+          <a href="https://wa.me/525534491235?text=Hola%2C%20quiero%20informacion%20sobre%20el%20mariachi" target="_blank" rel="noopener" class="hero-phone-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+            <span>553 449 1235</span>
+          </a>
+          <a href="https://wa.me/525530747131?text=Hola%2C%20quiero%20informacion%20sobre%20el%20mariachi" target="_blank" rel="noopener" class="hero-phone-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+            <span>553 074 7131</span>
           </a>
         </div>
         <div class="hero-meta" data-hero="7">
@@ -3237,11 +3541,7 @@ main section[id] {
           <div class="hero-meta-item hero-meta-item--social">
             <span class="hero-social-label">Siguenos</span>
             <div class="social-links">
-              <a href="https://wa.me/5534491235" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg></span>
-                <span class="social-link-name">Instagram</span>
-              </a>
-              <a href="https://wa.me/5534491235" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/v/19JSNNt2aT/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
                 <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></span>
                 <span class="social-link-name">Facebook</span>
               </a>
@@ -3256,12 +3556,13 @@ main section[id] {
         <div class="section-head">
           <div class="section-head-main">
             <p class="eyebrow" data-reveal>Lo que hacemos</p>
-            <h2 class="section-title" data-reveal>Lo que <span class="text-gold">te ofrecemos</span></h2>
+            <h2 class="section-title services-title" data-reveal>Música en vivo <span class="services-title-accent">que convierte</span> tu celebración <span class="services-title-warm">en un momento inolvidable</span></h2>
           </div>
+          <p class="section-desc services-desc" data-reveal>Repertorio tradicional mexicano, ambiente para fiestas y serenatas puntuales en CDMX. Todo pensado para que contratar sea fácil y tu evento suene como debe sonar.</p>
         </div>
 
         <div class="service-rows">
-          <article class="service-row">
+          <article class="service-row" style="--service-bg-image: url('https://bcgboknagavmluglllun.supabase.co/storage/v1/object/public/negocios/a90c79f2-e32f-4513-ad98-fc1e3a42f127/1789492177398-i.jpeg');">
             <div class="service-media" data-reveal="media">
               <img src="https://bcgboknagavmluglllun.supabase.co/storage/v1/object/public/negocios/a90c79f2-e32f-4513-ad98-fc1e3a42f127/1789492177398-i.jpeg" alt="Musica tradicional mexicana en vivo" loading="lazy">
             </div>
@@ -3270,19 +3571,19 @@ main section[id] {
                 <span class="service-index" aria-hidden="true">01</span>
                 <span class="tag">Repertorio</span>
               </div>
-              <h3 class="service-title" data-reveal>Musica tradicional mexicana en vivo</h3>
-              <p class="service-desc" data-reveal>Interpretamos el repertorio clasico del mariachi mexicano: rancheras, sones, corridos y canciones romanticas. Para quien quiere que la musica sea el centro de su fiesta.</p>
+              <h3 class="service-title" data-reveal>Música tradicional mexicana en vivo</h3>
+              <p class="service-desc" data-reveal>Interpretamos el repertorio clásico del mariachi mexicano: rancheras, sones, corridos y canciones románticas. Para quien quiere que la música sea el centro de su fiesta.</p>
               <ul class="service-list">
                 <li data-reveal>Rancheras, sones y corridos en vivo</li>
                 <li data-reveal>Canciones romanticas a peticion</li>
                 <li data-reveal>Repertorio adaptado a tu evento</li>
-                <li data-reveal>Musica en vivo durante toda la velada</li>
+                <li data-reveal>Música en vivo durante toda la velada</li>
                 <li data-reveal>Solicitudes del publico bienvenidas</li>
               </ul>
             </div>
           </article>
 
-          <article class="service-row service-row--reverse">
+          <article class="service-row service-row--reverse" style="--service-bg-image: url('https://bcgboknagavmluglllun.supabase.co/storage/v1/object/public/negocios/a90c79f2-e32f-4513-ad98-fc1e3a42f127/1789492177400-j.jpeg');">
             <div class="service-media" data-reveal="media">
               <img src="https://bcgboknagavmluglllun.supabase.co/storage/v1/object/public/negocios/a90c79f2-e32f-4513-ad98-fc1e3a42f127/1789492177400-j.jpeg" alt="Mariachi para fiestas y eventos especiales" loading="lazy">
             </div>
@@ -3303,7 +3604,7 @@ main section[id] {
             </div>
           </article>
 
-          <article class="service-row">
+          <article class="service-row" style="--service-bg-image: url('https://bcgboknagavmluglllun.supabase.co/storage/v1/object/public/negocios/a90c79f2-e32f-4513-ad98-fc1e3a42f127/1789492177427-wer.jpeg');">
             <div class="service-media" data-reveal="media">
               <img src="https://bcgboknagavmluglllun.supabase.co/storage/v1/object/public/negocios/a90c79f2-e32f-4513-ad98-fc1e3a42f127/1789492177427-wer.jpeg" alt="Serenatas y sorpresas musicales" loading="lazy">
             </div>
@@ -3325,7 +3626,7 @@ main section[id] {
         </div>
 
         <div class="services-cta" data-reveal>
-          <p>Si buscas un mariachi de confianza en CDMX, Mariachi Santa Maria esta listo para hacer que tu celebracion suene como debe sonar.</p>
+          <p>Si buscas un mariachi de confianza en CDMX, Maríachi Santa María CDMX De Gil Márquez esta listo para hacer que tu celebracion suene como debe sonar.</p>
           <button type="button" class="btn btn-primary" data-wa-trigger><span>Solicita informacion</span></button>
         </div>
       </div>
@@ -3436,18 +3737,62 @@ main section[id] {
             <p class="eyebrow" data-reveal>Momentos que no se olvidan</p>
             <h2 class="section-title" data-reveal>El mariachi que <span class="text-gold">pone el ambiente</span></h2>
           </div>
-          <p class="section-desc" data-reveal>Cada celebracion merece musica en vivo que se sienta de verdad. Mira y escucha al Mariachi Santa Maria CDMX en accion, en video real de nuestras presentaciones.</p>
+          <p class="section-desc" data-reveal>Cada celebracion merece musica en vivo que se sienta de verdad. Mira y escucha al Maríachi Santa María CDMX De Gil Márquez en accion, en video real de nuestras presentaciones.</p>
         </div>
         <div class="gallery-grid" data-reveal-group>
           <figure class="gallery-item" data-reveal="media">
-            <video class="gallery-video" src="video-mariachi-1.mp4" data-caption="Mariachi Santa Maria CDMX en vivo" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="0" aria-label="Reproducir video: Mariachi Santa Maria CDMX en vivo">
+            <video class="gallery-video" src="video-mariachi-1.mp4" data-caption="Maríachi Santa María CDMX De Gil Márquez en vivo" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="0" data-label="Video en vivo" aria-label="Reproducir video con sonido: Maríachi Santa María CDMX De Gil Márquez en vivo">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
             </button>
           </figure>
           <figure class="gallery-item" data-reveal="media">
-            <video class="gallery-video" src="video-mariachi-2.mp4" data-caption="Mariachi Santa Maria CDMX en presentacion" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="1" aria-label="Reproducir video: Mariachi Santa Maria CDMX en presentacion">
+            <video class="gallery-video" src="video-mariachi-2.mp4" data-caption="Maríachi Santa María CDMX De Gil Márquez en presentacion" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="1" data-label="Presentacion en vivo" aria-label="Reproducir video con sonido: Maríachi Santa María CDMX De Gil Márquez en presentacion">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <video class="gallery-video" src="WhatsApp Video 2026-09-15 at 12.42.58 PM.mp4" data-caption="Video real de presentacion del Maríachi Santa María CDMX De Gil Márquez" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="2" data-label="Momento en vivo" aria-label="Reproducir video con sonido real de presentacion del Maríachi Santa María CDMX De Gil Márquez">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <video class="gallery-video" src="WhatsApp Video 2026-09-15 at 12.44.25 PM.mp4" data-caption="Video real de evento del Maríachi Santa María CDMX De Gil Márquez" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="3" data-label="Evento en vivo" aria-label="Reproducir video con sonido real de evento del Maríachi Santa María CDMX De Gil Márquez">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <video class="gallery-video" src="WhatsApp Video 2026-09-15 at 12.46.49 PM.mp4" data-caption="Video real en vivo del Maríachi Santa María CDMX De Gil Márquez" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="4" data-label="Ambiente en vivo" aria-label="Reproducir video con sonido real en vivo del Maríachi Santa María CDMX De Gil Márquez">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <video class="gallery-video" src="WhatsApp Video 2026-09-15 at 12.48.26 PM.mp4" data-caption="Video real de musica en vivo del Maríachi Santa María CDMX De Gil Márquez" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="5" data-label="Musica en vivo" aria-label="Reproducir video con sonido real de musica en vivo del Maríachi Santa María CDMX De Gil Márquez">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <video class="gallery-video" src="WhatsApp Video 2026-09-15 at 12.51.26 PM.mp4" data-caption="Video real de interpretacion del Maríachi Santa María CDMX De Gil Márquez" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="6" data-label="Interpretacion en vivo" aria-label="Reproducir video con sonido real de interpretacion del Maríachi Santa María CDMX De Gil Márquez">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <video class="gallery-video" src="WhatsApp Video 2026-09-15 at 12.54.08 PM.mp4" data-caption="Video real del Maríachi Santa María CDMX De Gil Márquez" muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <span class="gallery-sound-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.1-3.8v7.6a4.5 4.5 0 0 0 2.1-3.8Zm-2.1-8v2.1a7 7 0 0 1 0 11.8V20a9 9 0 0 0 0-16Z"/></svg></span>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="7" data-label="Presentacion real" aria-label="Reproducir video con sonido real del Maríachi Santa María CDMX De Gil Márquez">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
             </button>
           </figure>
@@ -3456,7 +3801,7 @@ main section[id] {
         <div class="gallery-cta" data-reveal>
           <div class="gallery-cta-text">
             <svg viewBox="0 0 24 24" class="gallery-cta-icon" aria-hidden="true"><path fill="currentColor" d="M4 5h16v2H4V5Zm0 6h16v2H4v-2Zm0 6h10v2H4v-2Z"/></svg>
-            <p>Si buscas un mariachi de confianza en CDMX, Mariachi Santa Maria esta listo para hacer que tu celebracion suene como debe sonar.</p>
+            <p>Si buscas un mariachi de confianza en CDMX, Maríachi Santa María CDMX De Gil Márquez esta listo para hacer que tu celebracion suene como debe sonar.</p>
           </div>
           <button type="button" class="btn btn-outline" data-wa-trigger>
             <span>Solicita informacion</span>
@@ -3474,12 +3819,15 @@ main section[id] {
           <h2 class="section-title" data-reveal>Hablemos de tu <span class="text-gold">celebracion</span></h2>
           <p class="section-desc" data-reveal>Cuéntanos para que ocasion necesitas al mariachi y con gusto te orientamos. Respondemos rapido y nos adaptamos a tu evento en CDMX y zona metropolitana.</p>
           <ul class="contact-list" data-reveal-group>
-            
+
             <li data-reveal>
               <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.7.1.4 0 .8-.2 1L6.6 10.8Z"/></svg></span>
               <span class="contact-text">
                 <span class="contact-label">WhatsApp</span>
-                <a href="https://wa.me/5534491235" target="_blank" rel="noopener">553 449 1235</a>
+                <span class="contact-phone-list">
+                  <a href="https://wa.me/525534491235?text=Hola%2C%20quiero%20informacion%20sobre%20el%20mariachi" target="_blank" rel="noopener">553 449 1235</a>
+                  <a href="https://wa.me/525530747131?text=Hola%2C%20quiero%20informacion%20sobre%20el%20mariachi" target="_blank" rel="noopener">553 074 7131</a>
+                </span>
               </span>
             </li>
             <li data-reveal>
@@ -3492,11 +3840,12 @@ main section[id] {
           </ul>
           <div class="contact-actions" data-reveal>
             <button type="button" class="btn btn-primary" data-wa-trigger><span>Pedir por WhatsApp</span></button>
+            <a href="https://www.facebook.com/share/v/19JSNNt2aT/" target="_blank" rel="noopener" class="btn btn-facebook">
+              <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+              <span>Facebook</span>
+            </a>
             <div class="social-links social-links--inline">
-              <a href="https://wa.me/5534491235" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg></span>
-              </a>
-              <a href="https://wa.me/5534491235" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/v/19JSNNt2aT/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
                 <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></span>
               </a>
             </div>
@@ -3510,15 +3859,15 @@ main section[id] {
 
   </main>
 
-  
+
 <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#inicio" class="brand">
-          <span class="brand-mark"><img src="logo.jpg" alt="Mariachi Santa Maria" class="brand-logo"></span>
-          <span class="brand-text"><span class="brand-name">Mariachi Santa Maria</span><span class="brand-tagline">Mariachi en CDMX con talento y puntualidad</span></span>
+          <span class="brand-mark"><img src="logo-mejorado.jpg" alt="Maríachi Santa María CDMX De Gil Márquez" class="brand-logo"></span>
+          <span class="brand-text"><span class="brand-name">Maríachi Santa María CDMX</span><span class="brand-tagline">Mariachi en CDMX con talento y puntualidad</span><span class="brand-owner">De Gil Márquez</span></span>
         </a>
-        <p>Mariachi Santa Maria CDMX lleva la musica tradicional mexicana a tus celebraciones con puntualidad y talento. Bodas, serenatas y eventos en toda la Ciudad de Mexico.</p>
+        <p>Maríachi Santa María CDMX De Gil Márquez lleva la musica tradicional mexicana a tus celebraciones con puntualidad y talento. Bodas, serenatas y eventos en toda la Ciudad de Mexico.</p>
       </div>
       <div class="footer-col">
         <h4>Menu</h4>
@@ -3533,14 +3882,15 @@ main section[id] {
         <h4>Contacto</h4>
         <ul>
           <li>Ciudad de Mexico, CDMX<br>Ciudad de Mexico, CDMX</li>
-          <li><a href="https://wa.me/5534491235" target="_blank" rel="noopener">553 449 1235</a></li>
+          <li><a href="https://wa.me/525534491235?text=Hola%2C%20quiero%20informacion%20sobre%20el%20mariachi" target="_blank" rel="noopener">553 449 1235</a></li>
+          <li><a href="https://wa.me/525530747131?text=Hola%2C%20quiero%20informacion%20sobre%20el%20mariachi" target="_blank" rel="noopener">553 074 7131</a></li>
           <li>Lunes a domingo de 9:00 a 22:00 hrs</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>&copy; <span id="year"></span> Mariachi Santa Maria. Todos los derechos reservados.</p>
+        <p>&copy; <span id="year"></span> Maríachi Santa María CDMX De Gil Márquez. Todos los derechos reservados.</p>
         <p class="footer-bottom-tag">Mariachi en CDMX con talento y puntualidad</p>
       </div>
     </div>
@@ -3557,20 +3907,20 @@ main section[id] {
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12 19 6.4 17.6 5 12 10.6Z"/></svg>
       </button>
       <p class="eyebrow">Escribenos por WhatsApp</p>
-      <h3 id="wa-modal-title">El Mariachi Santa Maria esta listo para tu evento</h3>
+      <h3 id="wa-modal-title">El Maríachi Santa María CDMX De Gil Márquez esta listo para tu evento</h3>
       <p class="wa-modal-desc">Dinos que tienes en mente y te respondemos de inmediato. Agenda tu fecha o resuelve cualquier duda sin compromiso.</p>
       <div class="wa-modal-options">
-        <a href="https://wa.me/5534491235?text=Hola%2C%20quiero%20informacion" target="_blank" rel="noopener" class="wa-modal-option">
+        <a href="https://wa.me/525534491235?text=Hola%2C%20quiero%20agendar%20mi%20evento%20con%20el%20mariachi" target="_blank" rel="noopener" class="wa-modal-option">
           <span class="wa-modal-option-body">
-            <span class="wa-modal-option-title">Quiero agendar mi evento</span>
-            <span class="wa-modal-option-desc">Dinos la fecha, el lugar y el tipo de celebracion para darte disponibilidad.</span>
+            <span class="wa-modal-option-title">Escribir al 553 449 1235</span>
+            <span class="wa-modal-option-desc">Agenda tu fecha o pide disponibilidad para tu celebracion.</span>
           </span>
           <svg viewBox="0 0 24 24" class="wa-modal-option-arrow" aria-hidden="true"><path fill="currentColor" d="m13.5 5-1.4 1.4 4.6 4.6H4v2h12.7l-4.6 4.6L13.5 19l7-7Z"/></svg>
         </a>
-        <a href="https://wa.me/5534491235?text=Hola%2C%20quiero%20informacion" target="_blank" rel="noopener" class="wa-modal-option">
+        <a href="https://wa.me/525530747131?text=Hola%2C%20quiero%20informacion%20sobre%20el%20mariachi" target="_blank" rel="noopener" class="wa-modal-option">
           <span class="wa-modal-option-body">
-            <span class="wa-modal-option-title">Tengo una pregunta</span>
-            <span class="wa-modal-option-desc">Consulta repertorio, duracion, numero de musicos o cualquier detalle del servicio.</span>
+            <span class="wa-modal-option-title">Escribir al 553 074 7131</span>
+            <span class="wa-modal-option-desc">Consulta repertorio, duracion, numero de musicos o detalles del servicio.</span>
           </span>
           <svg viewBox="0 0 24 24" class="wa-modal-option-arrow" aria-hidden="true"><path fill="currentColor" d="m13.5 5-1.4 1.4 4.6 4.6H4v2h12.7l-4.6 4.6L13.5 19l7-7Z"/></svg>
         </a>
@@ -3597,12 +3947,12 @@ main section[id] {
       </div>
       <div class="lightbox-meta">
         <span class="lightbox-caption" id="lightbox-caption"></span>
-        <span class="lightbox-count"><span id="lightbox-current">1</span> / <span id="lightbox-total">2</span></span>
+        <span class="lightbox-count"><span id="lightbox-current">1</span> / <span id="lightbox-total">8</span></span>
       </div>
     </div>
   </div>
 
-  
+
 <script>
 /* =========================================================
    CORE
@@ -3800,6 +4150,9 @@ const renderLightboxSlide = () => {
   lightboxVideo.pause();
   lightboxVideo.classList.remove("is-loaded");
   lightboxVideo.src = slide.src;
+  lightboxVideo.muted = false;
+  lightboxVideo.volume = 1;
+  lightboxVideo.controls = true;
   lightboxVideo.load();
   lightboxVideo.addEventListener("loadeddata", () => lightboxVideo.classList.add("is-loaded"), { once: true });
   lightboxVideo.play().catch(() => {});
@@ -3960,6 +4313,22 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll("[data-reveal]").forEach((el) => {
   if (grouped.has(el)) return;
   revealObserver.observe(el);
+});
+
+const revealVisibleNow = () => {
+  document.querySelectorAll("[data-reveal]").forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    const inView = rect.top < window.innerHeight * 0.92 && rect.bottom > window.innerHeight * -0.08;
+    if (inView) el.classList.add("is-visible");
+  });
+};
+
+window.addEventListener("load", () => {
+  window.setTimeout(() => {
+    const hashTarget = location.hash ? document.querySelector(location.hash) : null;
+    hashTarget?.scrollIntoView({ block: "start" });
+    window.setTimeout(revealVisibleNow, 180);
+  }, 3900);
 });
 
 /* =========================================================
