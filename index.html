@@ -1874,6 +1874,7 @@ main section[id] {
 }
 
 .gallery-item {
+  display: block;
   position: relative;
   margin: 0;
   aspect-ratio: 9 / 16;
@@ -1964,6 +1965,42 @@ main section[id] {
 .gallery-trigger:hover .gallery-trigger-icon {
   border-color: color-mix(in srgb, var(--red) 60%, transparent);
   background: color-mix(in srgb, var(--red) 30%, transparent);
+}
+
+/* ---------- Tarjeta que enlaza a un video externo (Facebook) ---------- */
+.gallery-item--link .gallery-trigger-icon {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  margin: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.gallery-item--link:hover .gallery-trigger-icon {
+  border-color: color-mix(in srgb, var(--red) 60%, transparent);
+  background: color-mix(in srgb, var(--red) 30%, transparent);
+}
+
+.gallery-fb-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(244, 239, 232, 0.3);
+  background: rgba(5, 5, 6, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--paper);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .js [data-reveal="media"].gallery-item.is-visible:hover > img,
@@ -3656,6 +3693,22 @@ main section[id] {
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
             </button>
           </figure>
+          <figure class="gallery-item gallery-item--wide" data-reveal="media">
+            <video class="gallery-video" src="WhatsApp%20Video%202026-09-22%20at%204.26.11%20PM.mp4" data-caption="Mariachi Santa Maria CDMX de Gil Marquez en un evento reciente" playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="8" aria-label="Reproducir video con audio: evento reciente">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item gallery-item--wide" data-reveal="media">
+            <img src="WhatsApp%20Image%202026-09-22%20at%203.08.58%20PM.jpeg" alt="Integrantes de Mariachi Santa Maria CDMX de Gil Marquez listos para el evento" loading="lazy">
+          </figure>
+          <a href="https://www.facebook.com/share/v/19gnGa9rKg/" target="_blank" rel="noopener" class="gallery-item gallery-item--link" data-reveal="media" aria-label="Ver video en Facebook de Mariachi Santa Maria CDMX de Gil Marquez (se abre en una pestana nueva)">
+            <img src="fb-video-portada.jpg" alt="Portada del video en Facebook de Mariachi Santa Maria CDMX de Gil Marquez" loading="lazy">
+            <span class="gallery-trigger-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7Z"/></svg>
+            </span>
+            <span class="gallery-fb-badge">Ver en Facebook</span>
+          </a>
         </div>
 
         <div class="gallery-cta" data-reveal>
